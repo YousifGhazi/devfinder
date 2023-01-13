@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>git hub users</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="dist/css/all.min.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <!-- script -->
+    <script defer src="dist/js/index.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="dark">
+    <div class="container">
+      <header id="header">
+        <div class="logo">devfinder</div>
+        <div class="light-dark-mode">
+          <div class="light">
+            <span>light </span>
+            <i class="fas fa-sun sun"></i>
+          </div>
+          <div class="dark">
+            <span> dark </span>
+            <i class="fas fa-moon moon"></i>
+          </div>
+        </div>
+      </header>
+      <section id="user">
+        <div class="search">
+          <div class="search-input">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search GitHub username..." />
+          </div>
+          <button class="search-button">search</button>
+        </div>
+        <div class="show-user">
+          <div class="user-img">
+            <img src="images/placeholder.jpg" alt="" />
+          </div>
+          <div class="user-info">
+            <div class="username-date">
+              <div>
+                <span class="name">name</span>
+                <span class="username">@username</span>
+              </div>
+              <span class="date"> joined 00 month 0000 </span>
+            </div>
+            <p class="bio">bio</p>
+            <div class="statistics">
+              <div class="repos count">
+                <span class="type">repos</span>
+                <span class="value"> 0 </span>
+              </div>
+              <div class="followers count">
+                <span class="type">followers</span>
+                <span class="value"> 0 </span>
+              </div>
+              <div class="following count">
+                <span class="type">following</span>
+                <span class="value"> 0 </span>
+              </div>
+            </div>
+            <div class="social-info">
+              <a href="#" class="location">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <span class="location-name">none </span>
+              </a>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter twitter-icon"></i>
+                <span class="twitter-username"> none</span>
+              </a>
+              <a href="#" class="blog">
+                <i class="fas fa-link blog-icon"></i>
+                <span class="blog-link"> none </span>
+              </a>
+              <a href="#" class="company">
+                <i class="fas fa-building company-icon"></i>
+                <span class="company-name"> none </span>
+              </a>
+            </div>
+          </div>
+          <div class="not-found hide">not found</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

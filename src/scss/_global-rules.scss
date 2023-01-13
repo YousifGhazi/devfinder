@@ -1,0 +1,88 @@
+@use "./colors" as *;
+
+// global-rules
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  --main-transition: 200ms;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-clr);
+  color: white;
+  transition: var(--main-transition);
+  font-family: "Ubuntu", sans-serif;
+}
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+}
+
+body#dark {
+  --background-clr: #{map-get($dark-colors, background-clr)};
+  --main-clr: #{map-get($dark-colors, main-clr)};
+  --main-blue-clr: #{map-get($dark-colors, main-blue-clr)};
+  --text-clr: #{map-get($dark-colors, text-clr)};
+  --h-clr: #{map-get($dark-colors, h-clr)};
+}
+body#light {
+  --background-clr: #{map-get($light-colors, background-clr)};
+  --main-clr: #{map-get($light-colors, main-clr)};
+  --main-blue-clr: #{map-get($light-colors, main-blue-clr)};
+  --text-clr: #{map-get($light-colors, text-clr)};
+  --h-clr: #{map-get($light-colors, h-clr)};
+}
+
+.container {
+  width: 100%;
+  padding: 4rem;
+  transition: var(--main-transition);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 90vw;
+    background-color: var(--background-clr);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 70vw;
+    background-color: var(--background-clr);
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 45vw;
+    background-color: var(--background-clr);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+button {
+  border: none;
+}
